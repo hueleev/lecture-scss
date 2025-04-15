@@ -1,0 +1,14 @@
+/* :root {
+    --변수명: 값;
+}
+*/
+
+:root {
+  --primary-color: #222;
+  --secondary-color: #444;
+}
+
+.portfolio {
+  color: var(--primary-color);
+  color: var(--secondary-color);
+}

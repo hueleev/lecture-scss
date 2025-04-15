@@ -1,0 +1,23 @@
+$crimson: crimson;
+$black: #000;
+
+.portfolio {
+  color: $crimson;
+  h1 {
+    color: $black;
+  }
+}
+
+.headline {
+  color: $crimson;
+  h2 {
+    color: $black;
+  }
+}
+
+.text {
+  text-align: center;
+}
+p {
+  color: $crimson;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+* {
+  //font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Build-in Function : map-get */
+$color: (
+  font-primary: #f3a683,
+  font-secondary: #786fa6,
+  font-focus: #63cdda,
+  bgc-primary: #f7d794,
+  bgc-secondary: #f5cd79,
+);
+
+$headline-font: (
+  headline-font-large: 45px,
+  headline-font-medium: 32px,
+  headline-font-small: 22px,
+);
+
+$font-family: (
+  kor: 'Noto Sans KR',
+  eng: 'Montserrat',
+);
+
+body {
+  background-color: map-get($color, bgc-primary);
+}
+.frame {
+  h1 {
+    color: map-get($color, font-focus);
+    font-size: map-get($headline-font, headline-font-large);
+    font-family: map-get($font-family, eng);
+  }
+  h2 {
+    color: map-get($color, font-primary);
+    font-size: map-get($headline-font, headline-font-medium);
+    font-family: map-get($font-family, eng);
+  }
+  h3 {
+    color: map-get($color, font-secondary);
+    font-size: map-get($headline-font, headline-font-small);
+    font-family: map-get($font-family, kor);
+  }
+  p {
+    color: map-get($color, font-secondary);
+    font-family: map-get($font-family, eng);
+  }
+}

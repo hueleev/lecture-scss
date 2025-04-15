@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 20px;
+}
+.portfolio h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.portfolio .portfolio-items {
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+.portfolio .portfolio-items .portfolio-item {
+  border: 1px solid #000;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio .portfolio-items .portfolio-item:nth-child(1) {
+  background-image: url("images/pika.jpg");
+}

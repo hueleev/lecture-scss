@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+// @mixin and @include
+@mixin default {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6em;
+}
+
+body {
+  @include default;
+}
+
+@mixin headline {
+  text-align: center;
+  font-size: 36px;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 20px;
+  span {
+    color: royalblue;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: crimson;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.heading {
+  @include headline;
+}
+
+.news-headline {
+  @include headline;
+}

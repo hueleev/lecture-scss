@@ -9,5 +9,7 @@
     }
   ],
   "liveSassCompile.settings.autoprefix": null,
-  "liveSassCompile.settings.generateMap": false
+  "liveSassCompile.settings.generateMap": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

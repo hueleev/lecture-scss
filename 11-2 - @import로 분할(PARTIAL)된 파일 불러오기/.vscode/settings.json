@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.formats": [
+      // This is the default.
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css"
+        //"savePathReplacementPairs": null
+      }
+    ],
+    "liveSassCompile.settings.autoprefix": null,
+    "liveSassCompile.settings.generateMap": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+  

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// Variables
+$complete-btn: royalblue;
+$loading-btn: green;
+$error-btn: crimson;
+$notice-btn-hover: #000;
+
+// Mixin
+@mixin notice-button {
+  font-size: 16px;
+  width: 150px;
+  padding: 7px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.35s;
+  &.complete:hover {
+    background-color: $complete-btn;
+    color: #fff;
+  }
+  &.loading:hover {
+    background-color: $loading-btn;
+    color: #fff;
+  }
+  &.error:hover {
+    background-color: $error-btn;
+    color: #fff;
+  }
+}
+
+button {
+  @include notice-button;
+  &.complete {
+    border: 3px solid $complete-btn;
+    color: $complete-btn;
+  }
+  &.loading {
+    border: 3px solid $loading-btn;
+    color: $loading-btn;
+  }
+  &.error {
+    border: 3px solid $error-btn;
+    color: $error-btn;
+  }
+}
